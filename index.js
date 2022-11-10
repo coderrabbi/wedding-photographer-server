@@ -25,6 +25,17 @@ async function run() {
   try {
     const serviceCollection = client.db("services").collection("service");
     app.get("/services", async (req, res) => {
+      const page = req.query.page;
+      const size = parseInt(req.query.size);
+      const query = {};
+      const cursor = serviceCollection.find(query);
+      const services = await cursor
+        .skip(page * size)
+        .limit(size)
+        .toArray();
+      res.send(services);
+    });
+    app.get("/allservices", async (req, res) => {
       const query = {};
       const cursor = serviceCollection.find(query);
       const services = await cursor.toArray();
@@ -41,6 +52,7 @@ async function run() {
       const service = req.body;
       const result = await serviceCollection.insertOne(service);
       res.send(result);
+      console.log(result);
     });
     app.put("/services/:id", async (req, res) => {
       const id = req.params.id;
