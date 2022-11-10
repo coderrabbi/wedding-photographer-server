@@ -16,10 +16,10 @@ const client = new MongoClient(uri, {
   serverApi: ServerApiVersion.v1,
 });
 
-// const data = require("./db.json");
-// app.get("/db", (req, res) => {
-//   res.send(data);
-// });
+const data = require("./db.json");
+app.get("/db", (req, res) => {
+  res.send(data);
+});
 
 async function run() {
   try {
@@ -37,26 +37,35 @@ async function run() {
       res.send(service);
     });
 
-    app.post("/services/:id", async (req, res) => {
-      const review = req.body;
-      const result = await serviceCollection.insertOne(review);
-      console.log(result);
+    app.post("/services", async (req, res) => {
+      const service = req.body;
+      const result = await serviceCollection.insertOne(service);
       res.send(result);
+    });
+    app.put("/services/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const service = req.body;
+      const ser = service[0].review;
+      // const updateService = {
+      //   $set: {
+      //     name: service.review.title,
+      //   },
+      // };
+      // const option = { upsert: true };
+      // const result = await serviceCollection.updateOne(
+      //   query,
+      //   updateService,
+      //   option
+      // );
+      // console.log(service);
+      // res.send(result);
+      console.log(ser);
     });
   } finally {
   }
 }
 run().catch((err) => console.log(err));
-
-app.get("/db/:id", (req, res) => {
-  const id = req.params.id;
-
-  const selectedCourses = db.find((c) => c.id === id);
-  res.send(selectedCourses);
-});
-app.get("/", (req, res) => {
-  res.send("app is running");
-});
 
 app.listen(port, () => {
   console.log("listen on port " + port);
