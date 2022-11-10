@@ -72,7 +72,7 @@ async function run() {
         updateService,
         option
       );
-      console.log(service);
+      conole.log(service);
       res.send(result);
       console.log(ser);
     });
