@@ -59,19 +59,19 @@ async function run() {
       const query = { _id: ObjectId(id) };
       const service = req.body;
       const ser = service[0].review;
-      // const updateService = {
-      //   $set: {
-      //     name: service.review.title,
-      //   },
-      // };
-      // const option = { upsert: true };
-      // const result = await serviceCollection.updateOne(
-      //   query,
-      //   updateService,
-      //   option
-      // );
-      // console.log(service);
-      // res.send(result);
+      const updateService = {
+        $set: {
+          name: service.review.title,
+        },
+      };
+      const option = { upsert: true };
+      const result = await serviceCollection.updateOne(
+        query,
+        updateService,
+        option
+      );
+      console.log(service);
+      res.send(result);
       console.log(ser);
     });
   } finally {
