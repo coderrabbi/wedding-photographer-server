@@ -24,6 +24,9 @@ app.get("/db", (req, res) => {
 async function run() {
   try {
     const serviceCollection = client.db("services").collection("service");
+    app.get("/", (req, res) => {
+      res.send("query server is running");
+    });
     app.get("/services", async (req, res) => {
       const page = req.query.page;
       const size = parseInt(req.query.size);
