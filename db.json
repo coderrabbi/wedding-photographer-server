@@ -6,15 +6,13 @@
     "rating": "4",
     "price": "1000",
     "numOfReview": "5",
-    "review": [
-      {
-        "title": "Once a user is logged in, he/she will see more options like My reviews, Add service, and the logout button in the navbar.",
-        "reviewer": "goalm rabbi",
-        "timeStamp": "07/08/2022",
-        "reviewerEmail": "goalm@gmail.com",
-        "reviewerImg": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png"
-      }
-    ]
+    "review": {
+      "title": "Once a user is logged in, he/she will see more options like My reviews, Add service, and the logout button in the navbar.",
+      "reviewer": "goalm rabbi",
+      "timeStamp": "07/08/2022",
+      "reviewerEmail": "goalm@gmail.com",
+      "reviewerImg": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png"
+    }
   },
   {
     "imgUrl": "https://lh3.googleusercontent.com/-9Q6AFa3_MlxBPsNfeDQvA5kPdJp6rQRMwO-pod2sbIhugFjxdYdCxrx1tXOJ9JbpDowB3n_wjrnSwCE0JNbayGJw7WaQ5ZsPlOxlQ=w1200-h600-rw-e30",
@@ -23,15 +21,13 @@
     "rating": "4",
     "price": "1000",
     "numOfReview": "5",
-    "review": [
-      {
-        "title": "Once a user is logged in, he/she will see more options like My reviews, Add service, and the logout button in the navbar.",
-        "reviewer": "goalm rabbi",
-        "reviewerEmail": "goalm@gmail.com",
-        "timeStamp": "07/08/2022",
-        "reviewerImg": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png"
-      }
-    ]
+    "review": {
+      "title": "Once a user is logged in, he/she will see more options like My reviews, Add service, and the logout button in the navbar.",
+      "reviewer": "goalm rabbi",
+      "reviewerEmail": "goalm@gmail.com",
+      "timeStamp": "07/08/2022",
+      "reviewerImg": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png"
+    }
   },
   {
     "imgUrl": "https://lh3.googleusercontent.com/o_7lXtxJdV0H_r-L45dL02_fPH_iXpgW4hBhi2Y23a2ek8laS9iEG9bJIWs1WSr7OEvKaYlYv0je7DpTgZQUu_IkL6VlxDwgqxU5ng=w1200-h600-rw-e30",
@@ -40,14 +36,30 @@
     "rating": "4",
     "price": "1000",
     "numOfReview": "5",
-    "review": [
-      {
-        "title": "Once a user is logged in, he/she will see more options like My reviews, Add service, and the logout button in the navbar.",
-        "reviewer": "goalm rabbi",
-        "reviewerEmail": "goalm@gmail.com",
-        "timeStamp": "07/08/2022",
-        "reviewerImg": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png"
-      }
-    ]
+    "review": {
+      "title": "Once a user is logged in, he/she will see more options like My reviews, Add service, and the logout button in the navbar.",
+      "reviewer": "goalm rabbi",
+      "reviewerEmail": "goalm@gmail.com",
+      "timeStamp": "07/08/2022",
+      "reviewerImg": "https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png"
+    }
+  },
+  {
+    "imgUrl": "https://cdn0.weddingwire.in/article/9086/3_2/960/jpg/16809-creative-wedding-photography-avinash-dhoundhiyal-photography-lead-image.jpeg",
+    "title": "cinematic photography",
+    "price": "520",
+    "description": "Cinematic photography is a style of photography that emulates stills or frames from movie scenes. It is a highly effective storytelling technique that can create images with depth and feeling."
+  },
+  {
+    "imgUrl": "https://www.sgweddingphotography.com/wp-content/uploads/2018/01/museum3.jpg",
+    "title": " Indoor Pre Wedding Photography",
+    "price": "600",
+    "description": "Indoor wedding photography has its own charm, aesthetics, and wow moments. Want a glimpse of some indoor wedding photos that will get those creative juices flowing? Below are 10 images that could help with that."
+  },
+  {
+    "imgUrl": "https://wp.onethreeonefour.com/wp-content/uploads/2019/01/10-1-770x513.jpg",
+    "title": "outdoor photo shoot",
+    "description": "Outdoor weddings sound like the perfect chance to capture great photos. After all, you don’t have to worry about blur and high ISOs from shooting in a dimly lit indoor venue.\nBut outdoor wedding photography comes with its own set of challenges. These include uneven lighting, bright sun, dark shadows, and, of course, the weather.",
+    "price": "1200"
   }
 ]
