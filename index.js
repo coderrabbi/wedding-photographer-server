@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
+require("dotenv").config();
 var jwt = require("jsonwebtoken");
 const cors = require("cors");
+
 const port = process.env.PORT || 5000;
-require("dotenv").config();
+
 // miedlewere
 app.use(cors());
 app.use(express.json());
@@ -98,12 +100,12 @@ async function run() {
       res.send(review);
     });
 
-    app.get("/user-review", jwtVerify, async (req, res) => {
+    app.get("/user-review", async (req, res) => {
       let query = {};
-      const decoded = req.decoded;
-      if (decoded.email !== req.query.email) {
-        return res.status(401).send({ message: "unvalid token" });
-      }
+      // const decoded = req.decoded;
+      // if (decoded.email !== req.query.email) {
+      //   return res.status(401).send({ message: "unvalid token" });
+      // }
       if (req.query.email) {
         query = {
           email: req.query.email,
